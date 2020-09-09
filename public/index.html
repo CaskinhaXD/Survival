@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="images/decoration/logo.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZOMBIE SURVIVAL</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+  <div class='gun-card' id='miniGun-card'>
+    <div class="div-img">
+    <img src="images/gunIcons/miniGunIcon.png" alt="miniGunIcon">
+    </div>
+    <div class='gun-propreties'>
+      <p><strong>You unlocked the miniGun!</strong</p>
+      <p>damage per shot: 3</p>
+      <p>shots per second: 33</p>
+      <p>accuracy: 2/10</p>
+      <p>distance: 400</p>
+    </div>
+    <button onclick="mode='playing';keys=[]">nice</button>
+  </div>
+  <div class='gun-card' id='sniper-card'>
+    <div class="div-img">
+    <img src="images/gunIcons/heavySniperIcon.png" alt="miniGunIcon">
+    </div>
+    <div class='gun-propreties'>
+      <p>you unlocked the heavySniper!</p>
+      <p>damage per shot: 300</p>
+      <p>shots per second: 0.5</p>
+      <p>accuracy: 10/10</p>
+      <p>distance: 3000</p>
+    </div>
+    <button onclick="mode='playing';keys=[]">nice</button>
+  </div>
+  <div class='gun-card' id='bomb-card'>
+    <div class="div-img">
+    <img src="images/gunIcons/shotGunIcon.png" alt="miniGunIcon">
+    </div>
+    <div class='gun-propreties'>
+      <p>you unlocked the bomb!</p>
+      <p>damage per bullet: 8</p>
+      <p>shots per second: 0.66</p>
+      <p>number of buttets per shot: 16</p>
+      <p>distance: 400</p>
+    </div>
+    <button onclick="mode='playing';keys=[]">nice</button>
+  </div>
+  <div class='gun-card' id='bow-card'>
+    <div class="div-img">
+    <img src="images/gunIcons/bowIcon.png" alt="miniGunIcon">
+    </div>
+    <div class='gun-propreties'>
+      <p>you unlocked the legendary bow!</p>
+      <p>damage per shot: 40</p>
+      <p>shots per second: 2</p>
+      <p>accuracy: 9/10</p>
+      <p>distance: 1500</p>
+    </div>
+    <button onclick="mode='playing';keys=[]">nice</button>
+  </div>
+  <div class='gun-card' id='grenad-card'>
+    <div class="div-img">
+    <img src="images/gunIcons/grenadLancherIcon.png" alt="miniGunIcon">
+    </div>
+    <div class='gun-propreties'>
+      <p>you unlocked the grenad Lancher!</p>
+      <p>damage per shot: 80</p>
+      <p>shots per second: 0.5</p>
+      <p>the area damage: 100</p>
+      <p>distance: 300</p>
+    </div>
+    <button onclick="mode='playing';keys=[]">nice</button>
+  </div>
+
+  <div id='menu'>
+    <a href="pages/help.html"><button id="help"><strong>what's going on here?</stong></button></a>
+  <h1 id="high-score">high Score:</h1>
+
+  <div id='menuButtons'>
+  <button class='menuElement' onclick="mode='playing',restart()">play</button>
+  <a href="pages/leaderBoard.html"><button class='menuElement' >leader board</button></a>
+  <a href="pages/help2.html"><button class='menuElement' >help?</button></a>
+  </div>
+  </div>
+  <div id="p5_loading">
+    <p>loading...</p>
+  </div>
+  
+  <script src="classes/player.js"></script>
+  <script src="classes/bullet.js"></script>
+  <script src="classes/enemie.js"></script>
+  <script src="classes/people.js"></script>
+  <script src="classes/weapon.js"></script>
+  <script src="classes/enemieWeapon.js"></script>
+  <script src="classes/Shooters.js"></script>
+  <script src="scripts/functions.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

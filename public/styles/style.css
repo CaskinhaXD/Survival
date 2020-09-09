@@ -1,0 +1,128 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: rgb(1, 0, 51);
+  
+}
+button{
+  cursor:pointer;
+}
+#help{
+  background:none;
+  border:none;
+  position: fixed;
+  font-size: 10px;
+  right:0;
+  top:0;
+  color:rgb(255, 255, 255);
+}
+.gun-card button{
+  background:white;
+  border-radius: 0;
+  border:1px solid rgb(0, 0, 0);
+  font-size: 25px;
+  width:50%;
+  font-weight: bold;
+  
+}
+a{
+  text-decoration: none;
+}
+.gun-card button:hover{
+  
+  background:black;
+
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.gun-card{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(41, 41, 41);
+  border:2px solid black;
+  border-radius: 10px;
+  padding:5px;
+  box-shadow: 0 0 2px 2px rgb(63, 63, 63);
+  display:none;
+}
+
+.gun-card .div-img{
+border-bottom: 2px solid black;
+padding-bottom:20px; 
+}
+.gun-card img{
+  transform: rotate(45deg);
+  width:100px;
+  
+}
+.gun-card .gun-propreties p{
+  color:white;
+  font-size: 20px;
+  text-align: left;
+}
+canvas {
+  display: block;
+}
+#high-score{
+  font-size: 60px;
+  color:rgb(255, 255, 255);
+  margin:0;
+  font-family: 'Fredoka One', cursive;
+}
+body{
+  align-items: center;  
+  
+background-position: 50% 20%;
+  background-size: 100%;
+}
+#defaultCanvas0{
+  display:none;
+}
+#menu{
+  display:none;
+  background-image: none;
+}
+#p5_loading{
+  display: flex;
+  flex-direction: column-reverse;
+  padding:calc(100vh - 28px) 0 0 calc(100vw - 100px);
+  margin:0;
+  color:#FFFFFF;
+  background-color:#000000;
+  
+}
+#p5_loading p{
+  margin: 0;
+  font-size: 20px;
+}
+#menuButtons{
+  padding-top: calc(50vh - 81px);
+}
+.menuElement{
+  display:block;
+  width:calc(33% - 0px);
+  font-size: 30px;
+  margin: 10px 10px 10px 33%;
+  color:#FFFFFF;
+  background-color: #00d9ff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Fredoka One', cursive;
+
+}
+.menuElement:hover{
+  color: #00d9ff;
+  background-color: #FFFFFF;
+  display: block;
+  transform:scale(1.1);
+}
+@media screen and (max-width: 950px){
+  body{
+    background-size:150%;
+  }
+  
+}

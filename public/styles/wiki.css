@@ -1,0 +1,33 @@
+.link{
+  color:rgb(0, 134, 223);
+  cursor: pointer;
+  padding:0;
+  margin:0;
+  text-decoration: none;
+}
+.link:hover{
+ text-decoration: underline;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:0;
+  margin:0;
+  margin-left:10vw;
+  margin-right:10vw;
+}
+#index{
+  border:1px solid rgb(85, 85, 85);
+  margin-left:100px;
+  display: inline-block;
+  padding-right: 20px;
+  background-color: rgb(233, 233, 233);
+}
+#index p{
+  padding-left: 40px;
+  font-size: 20px;
+  margin: 0;
+}
+.stuff{
+  border-top:1px solid black;
+  margin-top: 22px;
+}
